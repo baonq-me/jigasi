@@ -7,7 +7,7 @@
     <format>zip</format>
   </formats>
   <includeBaseDirectory>true</includeBaseDirectory>
-  <baseDirectory>${project.artifactId}-linux-x64-${project.version}</baseDirectory>
+  <baseDirectory>${project.artifactId}<!---linux-x64-${project.version}--></baseDirectory>
   <dependencySets>
     <dependencySet>
       <outputDirectory>lib</outputDirectory>
@@ -52,6 +52,10 @@
       <includes>
         <include>graceful_shutdown.sh</include>
       </includes>
+    </fileSet>
+    <fileSet>
+      <directory>jigasi-home</directory>
+      <outputDirectory>jigasi-home</outputDirectory>
     </fileSet>
   </fileSets>
 </assembly>

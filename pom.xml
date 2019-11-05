@@ -411,13 +411,11 @@
             </goals>
             <configuration>
               <appendAssemblyId>false</appendAssemblyId>
-              <descriptor>src/assembly/linux-x64-bin-archive.xml
-              </descriptor>
+              <descriptor>src/assembly/linux-x64-bin-archive.xml</descriptor>
               <finalName>
-                ${project.artifactId}-linux-x64-${project.version}
+                ${project.artifactId}<!---linux-x64-${project.version}-->
               </finalName>
-              <skipAssembly>${assembly.skipAssembly}
-              </skipAssembly>
+              <skipAssembly>${assembly.skipAssembly}</skipAssembly>
             </configuration>
           </execution>
           <execution>
