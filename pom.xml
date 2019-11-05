@@ -396,9 +396,9 @@
               <appendAssemblyId>true</appendAssemblyId>
               <descriptors>
                 <!-- The slightly odd artifact names help with backwards compatibility with the checkNatives() implementation. -->
-                <descriptor>src/assembly/native-linux-32.xml</descriptor>
+                <!--<descriptor>src/assembly/native-linux-32.xml</descriptor>-->
                 <descriptor>src/assembly/native-linux-64.xml</descriptor>
-                <descriptor>src/assembly/native-macosx.xml</descriptor>
+                <!--<descriptor>src/assembly/native-macosx.xml</descriptor>-->
               </descriptors>
               <skipAssembly>false</skipAssembly>
             </configuration>
@@ -418,7 +418,7 @@
               <skipAssembly>${assembly.skipAssembly}</skipAssembly>
             </configuration>
           </execution>
-          <execution>
+          <!--<execution>
             <id>assembly-linux-x86-bin-archive</id>
             <phase>package</phase>
             <goals>
@@ -451,7 +451,7 @@
               <skipAssembly>${assembly.skipAssembly}
               </skipAssembly>
             </configuration>
-          </execution>
+          </execution>-->
         </executions>
       </plugin>
       <plugin>
